@@ -1,0 +1,12 @@
+C:\Users\Casero\Desktop\Código Mintic\Veterinaria.App\Veterinaria.App.Persistencia\bin\Debug\netstandard2.1\Veterinaria.App.Pesistencia.deps.json
+C:\Users\Casero\Desktop\Código Mintic\Veterinaria.App\Veterinaria.App.Persistencia\bin\Debug\netstandard2.1\Veterinaria.App.Pesistencia.dll
+C:\Users\Casero\Desktop\Código Mintic\Veterinaria.App\Veterinaria.App.Persistencia\bin\Debug\netstandard2.1\Veterinaria.App.Pesistencia.pdb
+C:\Users\Casero\Desktop\Código Mintic\Veterinaria.App\Veterinaria.App.Persistencia\bin\Debug\netstandard2.1\Veterinaria.App.Dominio.dll
+C:\Users\Casero\Desktop\Código Mintic\Veterinaria.App\Veterinaria.App.Persistencia\bin\Debug\netstandard2.1\Veterinaria.App.Dominio.pdb
+C:\Users\Casero\Desktop\Código Mintic\Veterinaria.App\Veterinaria.App.Persistencia\obj\Debug\netstandard2.1\Veterinaria.App.Pesistencia.csprojAssemblyReference.cache
+C:\Users\Casero\Desktop\Código Mintic\Veterinaria.App\Veterinaria.App.Persistencia\obj\Debug\netstandard2.1\Veterinaria.App.Pesistencia.AssemblyInfoInputs.cache
+C:\Users\Casero\Desktop\Código Mintic\Veterinaria.App\Veterinaria.App.Persistencia\obj\Debug\netstandard2.1\Veterinaria.App.Pesistencia.AssemblyInfo.cs
+C:\Users\Casero\Desktop\Código Mintic\Veterinaria.App\Veterinaria.App.Persistencia\obj\Debug\netstandard2.1\Veterinaria.App.Pesistencia.csproj.CoreCompileInputs.cache
+C:\Users\Casero\Desktop\Código Mintic\Veterinaria.App\Veterinaria.App.Persistencia\obj\Debug\netstandard2.1\Veterinaria.App.Pesistencia.csproj.CopyComplete
+C:\Users\Casero\Desktop\Código Mintic\Veterinaria.App\Veterinaria.App.Persistencia\obj\Debug\netstandard2.1\Veterinaria.App.Pesistencia.dll
+C:\Users\Casero\Desktop\Código Mintic\Veterinaria.App\Veterinaria.App.Persistencia\obj\Debug\netstandard2.1\Veterinaria.App.Pesistencia.pdb

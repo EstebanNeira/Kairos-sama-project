@@ -1,0 +1,101 @@
+﻿@page
+@model Veterinaria.App.Pages.RegistroModel
+@{
+}
+<div class="cls container">
+    <div id="id-container-Registro" ->
+
+        <h2>Registrate</h2>
+
+
+        <form class="needs-validation" novalidate>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Contraseña</label>
+                    <input type="password" class="form-control" id="inputPassword4">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Primer Nombre *</label>
+                    <input type="email" class="form-control" id="ingresarcorreoelectronico">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Segundo nombre</label>
+                    <input type="password" class="form-control" id="inputsegundo nombre">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Primer Apellido *</label>
+                    <input type="email" class="form-control" id="primer apellido">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Segundo Apellido*</label>
+                    <input type="password" class="form-control" id="inputApellido">
+                </div>
+            </div>
+
+            <h2>Datos Personales</h2>
+
+            
+            <div class="form-group">
+                <label for="inputAddress">Direción</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Carrera 1 #2-3 pandebono">
+            </div>
+
+            
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputtelefono">Teléfono</label>
+                    <input type="text" class="form-control" id="telefono">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputState">Tipo de Documento</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Seleccione una...</option>
+                        <option value="1">Cédula de Ciudadanía</option>
+                        <option value="2">Cédula de Extranjería</option>
+
+                        <option>...</option>
+                    </select>
+                </div>
+
+
+
+                <div class="form-group col-md-3">
+                    <label for="inputZip">Número de Identificación</label>
+                    <input type="text" class="form-control" id="Numero de identificación">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Fecha de nacimiento</label>
+                <input type="date" name="bday" max="3000-12-31" min="1000-01-01" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Fecha de Registro</label>
+                <input type="date" name="bday" min="1000-01-01" max="3000-12-31" class="form-control">
+            </div>
+
+
+
+
+            <button type="submit" class="btn btn-primary background-color: #8064A2">Registrarte
+            </button>
+
+        </form>
+
+
+
+
+    </div>
+</div>
