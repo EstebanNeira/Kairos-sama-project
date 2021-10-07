@@ -1,0 +1,194 @@
+﻿@page
+@model Veterinaria.App.Presentacion.Pages.RegistroMascotaModel
+@{
+}
+
+<h1>
+    <img src="Veterinaria.App\Veterinaria.App.Presentacion\wwwroot\img\Logotipo2.png" alt="logo" width="120" height="120">
+</h1>
+
+
+<div class="accordion" id="accordionExample">
+
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                    data-target="#collapseMisMascotas" aria-expanded="true" aria-controls="collapseMisMascotas">
+                    Mis Mascotas
+                </button>
+            </h2>
+        </div>
+
+        <div id="collapseMisMascotas" class="collapse show" aria-labelledby="headingOne"
+            data-parent="#accordionExample">
+            <div class="card-body">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Tipo</th>
+                            <th scope="col">Raza</th>
+                            <th scope="col">Edad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @* @for(int i = 0; i < 10; i++){
+                            <tr>
+                            <th scope="row">@(i+1)</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>310</td>
+                            </tr>
+                            }
+                        *@
+
+                        @foreach (Mascota m in Model.listaMascotas)
+                        {
+                            <tr>
+                                <th scope="row">@m.Index</th>
+                                <td>@m.Nombre</td>
+                                <td>@m.Tipo</td>
+                                <td>@m.Raza</td>
+                                <td>@m.Edad</td>
+                            </tr>
+                        }
+
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                    data-target="#collapseAgregar" aria-expanded="true" aria-controls="collapseAgregar">
+                    Agregar Mascotas
+                </button>
+            </h2>
+        </div>
+
+        <div id="collapseAgregar" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+                <form>
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col -xl">
+                                <div class="form-group">
+                                    <label for="id-mascota-nombre">Nombre</label>
+                                    <input type="text" class="form-control" id="id-mascota-nombre"
+                                        aria-describedby="id-message-nombre">
+                                </div>
+                            </div>
+                            <div class="col -xl">
+                                <div class="form-group">
+                                    <label for="id-mascota-tipo">Tipo</label>
+                                    <select id="id-mascota-tipo" class="custom-select">
+                                        <option selected>Elige...</option>
+                                        <option value="1">Perro</option>
+                                        <option value="2">Gato</option>
+                                        <option value="3">Ave</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col -md">
+                                <div class="form-group">
+                                    <label for="id-veterinario-telefono">Raza</label>
+                                    <input type="text" class="form-control" id="id-mascota-raza"
+                                        aria-describedby="id-message-raza">
+                                </div>
+                            </div>
+                            <div class="col -md">
+                                <div class="form-group">
+                                    <label for="id-mascota-edad">Fecha de nacimiento</label>
+                                    <input type="date" class="form-control" id="id-mascota-edad"
+                                        aria-describedby="id-message-edad">
+                                </div>
+                            </div>
+                            <div class="col -6">
+                                <div class="form-group">
+                                    <label for="id-mascota-genero">Género</label>
+                                    <select id="id-mascota-genero" class="custom-select">
+                                        <option selected>Elige...</option>
+                                        <option value="1">Macho</option>
+                                        <option value="2">Hembra</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col -md">
+                                <div class="form-group">
+                                    <label for="id-mascota-peso">Peso (kg)</label>
+                                    <input type="number" class="form-control" id="id-mascota-peso"
+                                        aria-describedby="id-message-peso">
+                                </div>
+                            </div>
+                            <div class="col -md">
+                                <div class="form-group">
+                                    <label for="id-mascota-tamaño">Tamaño</label>
+                                    <input type="number" class="form-control" id="id-mascota-tamaño"
+                                        aria-describedby="id-message-tamaño">
+                                </div>
+                            </div>
+                            <div class="col -md">
+                                <div class="form-group">
+                                    <label for="id-mascota-color">Color</label>
+                                    <input type="text" class="form-control" id="id-mascota-color"
+                                        aria-describedby="id-message-color">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="input-group">
+                                <span class="input-group-text">Detalles de Cuidado</span>
+                                <textarea class="form-control" aria-label="DetalleCuidado"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col -xl">
+                                <div class="form-group">
+                                    <small id="id-message-foto" class="form-text text-muted">Agrega una
+                                        foto de
+                                        tu
+                                        mascota.</small>
+                                    <div class="input-group mb-3">
+                                        <label class="input-group-text" for="inputGroupFile01">Upload</label>
+                                        <input type="file" class="form-control" id="inputGroupFile01">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col self-align-center">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="id-mascota-esterilizado">
+                                    <label class="form-check-label" for="id-mascota-esterilizado">Estirilizado</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-xl-start">
+                            <button type="submit" class="btn btn-primary">Aceptar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</div>
